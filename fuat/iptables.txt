@@ -1,0 +1,14 @@
+iptables -A INPUT -p tcp --dport http -j DROP    
+iptables -A INPUT -p tcp --dport http -j REJECT
+
+iptables -t nat -A PREROUTING -p tcp --dport 80 -j DNAT --to-destination 123.123.123.123
+
+iptables -N newchain
+iptables -A newchain -p tcp --dport 80 -j DROP
+iptables -A INPUT -j newchain
+
+iptables -N newchain
+iptables -I INPUT -j newchain
+iptables -N newnewchain
+iptables -I newchain -j newnewchain
+iptables -I newnewchain -p tcp -d 80 -j DROP
