@@ -14,5 +14,6 @@ ip link set cg0 up
 ip addr add 10.1.0.2/24 dev cg0
 
 # Routing
+ip route add default via 10.1.0.1 dev cg0
 
 # Iptables
