@@ -10,4 +10,6 @@ ip addr add 10.1.0.2/24 dev cg0
 
 #Routing
 
+ip route add 0.0.0.0/0 via 10.1.0.1 dev cg0
+
 #iptables
