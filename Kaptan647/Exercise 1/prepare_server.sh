@@ -10,4 +10,6 @@ ip addr add 10.3.0.2/24 dev sr0
 
 #routing
 
+ip route add default via 10.3.0.1 dev sr0
+
 #iptables

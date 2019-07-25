@@ -14,6 +14,9 @@ ip addr add 10.2.0.1/24 dev gr0
 
 #routing
 
+ip route add default via 10.2.0.2 dev gr0
+sysctl net.ipv4.ip_forward=1
+
 #iptables
 
 
