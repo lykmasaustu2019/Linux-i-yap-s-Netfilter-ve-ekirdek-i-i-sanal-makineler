@@ -24,5 +24,7 @@ sysctl net.ipv4.ip_forward=1
 #iptables
 
 iptables -t nat -A PREROUTING -d 10.201.102.6 -p tcp --dport 80 -j DNAT --to-destination 10.3.0.2
-iptables -t nat -A POSTROUTING -d 10.201.102.0/24 -j MASQUERADE
+iptables -t nat -A POSTROUTING -d 10.201.102.0/24 -j SNAT --to-source 10.201.102.6
+#yukarıdaki kuralın altrenatifi
+#iptables -t nat -A POSTROUTING -d 10.201.102.0/24 -j MASQUERADE
 
