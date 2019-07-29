@@ -9,7 +9,7 @@ ip addr add 10.2.0.1/24 dev gr0
 ip link set gc0 up
 ip link set gr0 up
 #------routing-----
-ip route addd default via 10.2.0.2 dev gr0
+ip route add default via 10.2.0.2 dev gr0
 #------iptabables-----
 #----ek ayarlar-----
 #/proc/sys/net/ipv4/ip_forward >>> 1
