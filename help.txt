@@ -1,0 +1,17 @@
+						Floppy OS
+
+Floppy OS ,Alpine linux distrosu uzerine kurulmus,kerneli bastan derlenmis ,
+routerlar icin ozellestirilmis bir linux dagitimidir.Package manager olarak 
+Alpine Package Keeper (apk) ile gelmektedir.
+Paket yuklemek icin:#apk add <>
+Kaldirmak icin:#apk del <>
+komutlari kullanilir.
+Shell olarak ise hafif bir unix shell olan Almquist shell(ash) tercih edilmistir
+ancak apk ile baska sheller de yuklenebilir.orn :#apk add bash
+Floppy OS her acildiginda ag ayarlari otomatik olarak yapilmaktadir.
+Bu ayarlarda degisiklik yapmak icin root klasoru altindaki setup.sh dosyasi duzenlenebilir.
+Duzenlemelrin gerceklesmesi icin sistem yeniden baslatilmalidir.
+
+Mustafa akgul ozgur yazilim yaz kampi
+linux ic yapisi:Netfilter ve cekirdek ici sanal makinalar kursu
+Masaustu gurubu
