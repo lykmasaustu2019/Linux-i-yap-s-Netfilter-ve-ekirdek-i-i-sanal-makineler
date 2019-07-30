@@ -14,4 +14,4 @@ Duzenlemelrin gerceklesmesi icin sistem yeniden baslatilmalidir.
 
 Mustafa akgul ozgur yazilim yaz kampi
 linux ic yapisi:Netfilter ve cekirdek ici sanal makinalar kursu
-Masaustu gurubu
+Masaustu grubu
